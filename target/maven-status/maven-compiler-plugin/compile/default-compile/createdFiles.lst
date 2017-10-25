@@ -1,0 +1,11 @@
+com\test\spring\boot\model\UserType.class
+com\test\spring\boot\conf\DBConfiguration.class
+com\test\spring\boot\controller\BookController.class
+com\test\spring\boot\service\IBookService.class
+com\test\spring\boot\Application.class
+com\test\spring\boot\dao\IBookDAO.class
+com\test\spring\boot\repository\BookRepository.class
+com\test\spring\boot\model\Book.class
+com\test\spring\boot\dao\BookDAO.class
+com\test\spring\boot\model\Booking.class
+com\test\spring\boot\model\User.class
