@@ -25,7 +25,6 @@ public class Book implements Serializable{
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "AUTHOR_ID", nullable = false)
     @JsonManagedReference
-    //@JsonBackReference
     private  Author author;
 
     public Long getId() {
