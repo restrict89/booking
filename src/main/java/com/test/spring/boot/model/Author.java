@@ -1,12 +1,16 @@
 package com.test.spring.boot.model;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Table(name = "AUTHOR")
-public class Author {
+public class Author implements Serializable {
 
 
 
@@ -22,7 +26,9 @@ public class Author {
     @Column(name = "NAME")
     private String name;
 
+
     @OneToMany(orphanRemoval=true, fetch = FetchType.LAZY,mappedBy="author")
+    @JsonBackReference
     private  List<Book> books;
 
 
